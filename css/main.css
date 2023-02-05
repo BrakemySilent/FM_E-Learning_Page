@@ -10,10 +10,10 @@ body {
   width: 100vw;
   font-size: 62.5%;
   font-family: "roboto", sans-serif;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
-.header {
+.nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "span none btn";
@@ -22,15 +22,15 @@ body {
   width: 100%;
   height: 10vh;
 }
-.header__logo {
+.nav__logo {
   grid-column-start: 1;
   margin-left: 2rem;
   padding: 0.2rem;
   font-size: 1.4rem;
   font-weight: bold;
-  color: #383175;
+  color: rgb(25, 25, 54);
 }
-.header__btn {
+.nav__btn {
   grid-column-start: 3;
   align-self: center;
   width: 100px;
@@ -40,34 +40,64 @@ body {
   font-weight: bold;
   font-size: 0.8rem;
   color: #fff;
-  background-color: #383175;
+  background-color: rgb(25, 25, 54);
   border: 1px solid transparent;
   border-radius: 50px;
   cursor: pointer;
 }
 
+.heading {
+  height: 100vh;
+}
+.heading__description {
+  height: 40vh;
+  padding: 1rem;
+}
+.heading__header {
+  font-size: 2.2rem;
+  color: rgb(25, 25, 54);
+}
+.heading__text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(25, 25, 54);
+}
+.heading__btn {
+  width: 8rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4158d0;
+  background-image: linear-gradient(45deg, rgb(48, 207, 208) 11.2%, rgb(51, 8, 103) 92.5%);
+  border: none;
+  border-radius: 50px;
+}
+
 @media (min-width: 768px) {
-  .header {
+  .nav {
     padding-top: 2rem;
   }
-  .header__logo {
+  .nav__logo {
     font-size: 2.5rem;
   }
-  .header__btn {
+  .nav__btn {
     width: 200px;
     height: 50px;
     font-size: 1.4rem;
   }
 }
 @media (min-width: 1200px) {
-  .header {
+  .nav {
     height: 15vh;
     padding-top: 0;
   }
-  .header__logo {
+  .nav__logo {
     font-size: 4rem;
   }
-  .header__btn {
+  .nav__btn {
     width: 300px;
     height: 65px;
     font-size: 2rem;

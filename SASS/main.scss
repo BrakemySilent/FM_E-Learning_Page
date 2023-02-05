@@ -14,12 +14,12 @@ body {
 	width: 100vw;
 	font-size: 62.5%;
 	font-family: 'roboto', sans-serif;
-	background-color: color.$white;
+	background-color: color.$grey;
 }
 
-// Header
+// Nav
 
-.header {
+.nav {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas: 'span none btn';
@@ -54,9 +54,45 @@ body {
 	}
 }
 
+// Header
+
+.heading {
+	height: 100vh;
+
+	&__description {
+		height: 40vh;
+		padding: 1rem;
+	}
+
+	&__header {
+		font-size: 2.2rem;
+		color: color.$darkBlue;
+	}
+
+	&__text {
+		margin-top: 1rem;
+		font-size: 0.9rem;
+		font-weight: 500;
+		color: color.$darkBlue;
+	}
+
+	&__btn {
+		width: 8rem;
+		height: 1.5rem;
+		margin-top: 1rem;
+		font-family: 'roboto', sans-serif;
+		font-weight: bold;
+		color: color.$white;
+		background-color: #4158d0;
+		background-image: color.$gradient;
+		border: none;
+		border-radius: 50px;
+	}
+}
+
 @media (min-width: 768px) {
 	// Header
-	.header {
+	.nav {
 		padding-top: 2rem;
 		&__logo {
 			font-size: 2.5rem;
@@ -73,7 +109,7 @@ body {
 
 @media (min-width: 1200px) {
 	//Header
-	.header {
+	.nav {
 		height: 15vh;
 		padding-top: 0;
 
