@@ -65,7 +65,7 @@ body {
 }
 .heading__btn {
   width: 8rem;
-  height: 1.5rem;
+  height: 2.2rem;
   margin-top: 1rem;
   font-family: "roboto", sans-serif;
   font-weight: bold;
@@ -74,6 +74,32 @@ body {
   background-image: linear-gradient(45deg, rgb(48, 207, 208) 11.2%, rgb(51, 8, 103) 92.5%);
   border: none;
   border-radius: 50px;
+  cursor: pointer;
+}
+.heading__graphic {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+.heading__graphic-circle {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(45deg, rgb(48, 207, 208) 11.2%, rgb(51, 8, 103) 92.5%);
+  border-radius: 100%;
+  overflow: hidden;
+}
+.heading__graphic-circle .jesus {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/jesus.png");
+  background-position: center;
+  background-size: contain;
 }
 
 @media (min-width: 768px) {

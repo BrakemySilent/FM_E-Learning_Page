@@ -78,7 +78,7 @@ body {
 
 	&__btn {
 		width: 8rem;
-		height: 1.5rem;
+		height: 2.2rem;
 		margin-top: 1rem;
 		font-family: 'roboto', sans-serif;
 		font-weight: bold;
@@ -87,6 +87,35 @@ body {
 		background-image: color.$gradient;
 		border: none;
 		border-radius: 50px;
+		cursor: pointer;
+	}
+
+	&__graphic {
+		position: relative;
+		width: 100vw;
+		height: 60vh;
+		padding-top: 1rem;
+		overflow: hidden;
+
+		&-circle {
+			position: relative;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 250px;
+			height: 250px;
+			background-image: color.$gradient;
+			border-radius: 100%;
+			overflow: hidden;
+
+			.jesus {
+				width: 100%;
+				height: 100%;
+				background-image: url('../images/jesus.png');
+				background-position: center;
+				background-size: contain;
+			}
+		}
 	}
 }
 
