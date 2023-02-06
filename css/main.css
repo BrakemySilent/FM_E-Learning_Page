@@ -10,7 +10,7 @@ body {
   width: 100vw;
   font-size: 62.5%;
   font-family: "roboto", sans-serif;
-  background-color: #fafafa;
+  background-color: #dadada;
 }
 
 .nav {
@@ -97,9 +97,46 @@ body {
 .heading__graphic-circle .jesus {
   width: 100%;
   height: 100%;
-  background-image: url("../images/jesus.png");
-  background-position: center;
-  background-size: contain;
+}
+.heading__graphic-right {
+  position: absolute;
+  right: 1.5rem;
+  width: 80px;
+  height: 80px;
+  padding: 1rem;
+  background-color: #e6d8d8;
+  border-radius: 15px;
+  z-index: 2;
+}
+.heading__graphic-right p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.heading__graphic-right span {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.heading__graphic-left {
+  position: absolute;
+  bottom: 3rem;
+  left: 1.5rem;
+  width: 150px;
+  height: 80px;
+  padding: 1rem;
+  background-color: #e6d8d8;
+  border-radius: 15px;
+  z-index: 2;
+}
+.heading__graphic-left p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.heading__graphic-left span {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
