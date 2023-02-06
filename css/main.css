@@ -11,6 +11,7 @@ body {
   font-size: 62.5%;
   font-family: "roboto", sans-serif;
   background-color: #dadada;
+  overflow: hidden;
 }
 
 .nav {
@@ -77,14 +78,17 @@ body {
   cursor: pointer;
 }
 .heading__graphic {
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 60vh;
   padding-top: 1rem;
   overflow: hidden;
 }
+.heading__graphic-shade {
+  display: none;
+}
 .heading__graphic-circle {
-  position: relative;
+  position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -142,6 +146,7 @@ body {
 @media (min-width: 768px) {
   .nav {
     padding-top: 2rem;
+    z-index: -2;
   }
   .nav__logo {
     font-size: 2.5rem;
@@ -150,6 +155,102 @@ body {
     width: 200px;
     height: 50px;
     font-size: 1.4rem;
+  }
+  .heading {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50vh;
+  }
+  .heading__description {
+    width: 50vw;
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+  .heading__header {
+    font-size: 3rem;
+  }
+  .heading__text {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .heading__btn {
+    width: 15rem;
+    height: 3rem;
+    margin-top: 3rem;
+  }
+  .heading__graphic {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    padding-top: 3rem;
+    overflow: visible;
+  }
+  .heading__graphic-circle {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(45deg, rgb(48, 207, 208) 11.2%, rgb(51, 8, 103) 92.5%);
+    border-radius: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+  .heading__graphic-circle .jesus {
+    width: 100%;
+    height: 100%;
+  }
+  .heading__graphic-shade {
+    display: block;
+    position: absolute;
+    top: -45%;
+    left: 75%;
+    transform: rotate(50deg);
+    width: 200px;
+    height: 600px;
+    background-image: linear-gradient(45deg, rgb(48, 207, 208) 11.2%, rgb(51, 8, 103) 92.5%);
+    z-index: 5;
+  }
+  .heading__graphic-right {
+    position: absolute;
+    right: 1.5rem;
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+    background-color: #e6d8d8;
+    border-radius: 15px;
+    z-index: 2;
+  }
+  .heading__graphic-right p {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .heading__graphic-right span {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .heading__graphic-left {
+    position: absolute;
+    bottom: 3rem;
+    left: 1.5rem;
+    width: 150px;
+    height: 80px;
+    padding: 1rem;
+    background-color: #e6d8d8;
+    border-radius: 15px;
+    z-index: 2;
+  }
+  .heading__graphic-left p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .heading__graphic-left span {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
